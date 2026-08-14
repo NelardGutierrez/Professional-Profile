@@ -1,78 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Profile</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nelard Gutierrez · Portafolio</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-    
+    <!-- HEADER ELEGANTE -->
     <header>
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <img src="IMG/user.png" class="header-photo" alt="photo">
-            <h1>About Me</h1>
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="avatar-ring">
+                    <img src="IMG/user.png" class="avatar" alt="Nelard" />
+                </div>
+                <div class="logo-text">
+                    <span class="name-title">Nelard Gutierrez</span>
+                    <span class="subtitle">Desarrollador · Estudiante TI</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a href="CV/CV Nelard G.pdf" class="btn-primary" download>
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                    Descargar CV
+                </a>
+            </div>
         </div>
-        <a href="CV/CV Nelard G.pdf" class="btn-cv" download>Download CV</a>
-    </div>
     </header>
 
-    <nav>
-        <ul class="menu">
-            <li class="name-item">
-                <span class="led"></span>
-                Nelard Gutierrez
-            </li>
-            <li class="divider"></li>
-            <li><a href="https://github.com/NKSoftLabs" class="btn-img"><img src="IMG/github.png"></a></li>
-            <li><a href="https://www.linkedin.com/in/nelardg" class="btn-img"><img src="IMG/linkedin.png"></a></li>
-            <li><a href="mailto:stuartgs13@gmail.com" class="btn-img"><img src="IMG/gmail.png"></a></li>
-            <li><a href="projects.html" class="btn-img"><img src="IMG/DEV.png"></a></li>
-        </ul>
+    <!-- NAVEGACIÓN MEJORADA -->
+    <nav class="nav-glass">
+        <div class="nav-inner">
+            <span class="nav-badge">
+                <span class="status-dot"></span>
+                Disponible
+            </span>
+            <ul class="nav-links">
+                <li><a href="https://github.com/NKSoftLabs" class="social-link" aria-label="GitHub"><img src="IMG/github.png" alt="GitHub" /></a></li>
+                <li><a href="https://www.linkedin.com/in/nelardg" class="social-link" aria-label="LinkedIn"><img src="IMG/linkedin.png" alt="LinkedIn" /></a></li>
+                <li><a href="mailto:stuartgs13@gmail.com" class="social-link" aria-label="Correo"><img src="IMG/gmail.png" alt="Correo" /></a></li>
+                <li class="nav-divider"></li>
+                <li><a href="projects.html" class="nav-project-btn">Proyectos</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="resume-box box">
-        <h2 class="side"><em>Resume</em></h2>
-        <p>
-            I'm a student of <strong>CUC</strong> (Colegio Universitario de Cartago) I'm studying TI, I started in <strong>2023</strong>. <br>
-            At <em>14</em> I discovered that I like technology and its branches but I specialize in make <strong>software</strong> and desing-management <strong>databases</strong>. <br><br>
-            During my courses I learned how to do the <em>IA</em> to the porfit I mean like fast processes, software production facilities.
-        </p>
-    </div>
 
-    <div class="resume-box box">
-        <h2 class="side"><em>Experiences</em></h2>
-        <h4>PC Maintenance</h4>
-        <p>
-            I worked by my self in PC maintenance both software and hardware, it's awesome You don't know what you can fount in it. <br>
-            solve different software problems Drivers? Virus? An bad update? <em>You don't know</em>.
-        </p>
-        <h4>Development</h4>
-        <p>
-            I desingned different type of softwares, in groups or by my self. <br>
-            Softwares like Inventorys, Stores management, Day Trackers, Activity designers... And obviously <strong>CALCULATORS</strong> <br>
-            Someone once said "<em>If you can imagine, You can make that</em>"
-        </p>
-    </div>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- HERO / PRESENTACIÓN -->
+        <section class="hero-card">
+            <div class="hero-content">
+                <div class="hero-badge">✨ Sobre mí</div>
+                <h2 class="hero-title">Construyendo el futuro <br />una línea de código a la vez</h2>
+                <p class="hero-text">
+                    Estudiante de <strong>TI</strong> en el <strong>CUC</strong> con pasión por el <strong>desarrollo de software</strong> 
+                    y el <strong>diseño de bases de datos</strong>. Desde los 14 años explorando la tecnología 
+                    para crear soluciones que marquen la diferencia.
+                </p>
+                <div class="hero-tags">
+                    <span>#Software</span>
+                    <span>#BasesDeDatos</span>
+                    <span>#IA</span>
+                    <span>#Innovación</span>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Años de estudio</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number">6</span>
+                    <span class="stat-label">Tecnologías</span>
+                </div>
+            </div>
+        </section>
 
-    <div class="lanjuages-box box">
-        <h2 class="side"><em>Tecnologies and Tools</em></h2>
-        <p>
-            At this moment I maked software in C#, Python, HTML, Java but I like tray other languajes. <br>
-            And tryed different types of DB like MySQL, SQL and Mongo.
-        </p>
-        <ul>
-            <li><img src="IMG/csharp.png" alt="csharp"></li>
-            <li><img src="IMG/js.png" alt="js"></li>
-            <li><img src="IMG/piton.png" alt="python"></li>
-            <li><img src="IMG/html.png" alt="HTML"></li>
-            <li><img src="IMG/mysql.png" alt="MySQL"></li>
-            <li><img src="IMG/MongoDB.png" alt="Mongo"></li>
-        </ul>
-    </div>
+        <!-- EXPERIENCIA -->
+        <section class="exp-section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Experiencia</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="exp-grid">
+                <div class="exp-card">
+                    <div class="exp-icon">🖥️</div>
+                    <h4>Mantenimiento de PC</h4>
+                    <p>
+                        Diagnóstico y reparación de hardware y software. Solución de problemas 
+                        complejos: drivers, virus, actualizaciones críticas y recuperación de datos.
+                    </p>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-icon">⚡</div>
+                    <h4>Desarrollo de software</h4>
+                    <p>
+                        Creación de aplicaciones funcionales: sistemas de inventario, gestión de tiendas, 
+                        trackers de actividad y calculadoras. Proyectos individuales y colaborativos.
+                    </p>
+                    <blockquote>“Si puedes imaginarlo, puedes crearlo”</blockquote>
+                </div>
+            </div>
+        </section>
 
+        <!-- TECNOLOGÍAS -->
+        <section class="tech-section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Tecnologías & Herramientas</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="tech-showcase">
+                <div class="tech-description">
+                    <p>Lenguajes y bases de datos con las que trabajo para transformar ideas en productos digitales.</p>
+                </div>
+                <ul class="tech-grid">
+                    <li class="tech-item"><img src="IMG/csharp.png" alt="C#" /><span>C#</span></li>
+                    <li class="tech-item"><img src="IMG/js.png" alt="JavaScript" /><span>JavaScript</span></li>
+                    <li class="tech-item"><img src="IMG/piton.png" alt="Python" /><span>Python</span></li>
+                    <li class="tech-item"><img src="IMG/html.png" alt="HTML" /><span>HTML</span></li>
+                    <li class="tech-item"><img src="IMG/mysql.png" alt="MySQL" /><span>MySQL</span></li>
+                    <li class="tech-item"><img src="IMG/MongoDB.png" alt="MongoDB" /><span>MongoDB</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- LLAMADA A LA ACCIÓN -->
+        <section class="cta-section">
+            <div class="cta-card">
+                <h3>¿Tienes un proyecto en mente?</h3>
+                <p>Me gusta colaborar en ideas nuevas. Hagamos realidad la visión.</p>
+                <a href="mailto:stuartgs13@gmail.com" class="btn-secondary">Contáctame →</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; 2026 Nelard Gutierrez</p>
+            <div class="footer-links">
+                <a href="https://github.com/NKSoftLabs">GitHub</a>
+                <a href="https://www.linkedin.com/in/nelardg">LinkedIn</a>
+                <a href="mailto:stuartgs13@gmail.com">Correo</a>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer>
-    <p>&copy; 2026 Nelard Gutierrez — All rights reserved</p>
-</footer>
 </html>

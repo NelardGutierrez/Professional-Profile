@@ -1,64 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos · Nelard</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header>
-    <div class="top-bar">
-        <div class="top-bar-left">
-            <img src="IMG/user.png" class="header-photo" alt="photo">
-            <h1>Projects</h1>
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="avatar-ring">
+                    <img src="IMG/user.png" class="avatar" alt="Nelard" />
+                </div>
+                <div class="logo-text">
+                    <span class="name-title">Mis Proyectos</span>
+                    <span class="subtitle">Portafolio de trabajo</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a href="index.html" class="btn-primary btn-outline">← Volver</a>
+            </div>
         </div>
-        <a href="index.html" class="btn-cv">Home</a>
-    </div>
     </header>
 
-    <div class="projects-container">
-        
-        <div class="box-project" style="background-image: url('IMG/calculator.jpg');">
-            <a href="Calculator.html" class="box-link">
-            <h2 class="subtle">Calculator</h2>
-            <div class="languages-box">
-                <ul>
-                <li><img src="IMG/csharp.png" alt="C#"></li>
-                </ul>
-            </div>
-            </a>
+    <nav class="nav-glass">
+        <div class="nav-inner">
+            <span class="nav-badge">
+                <span class="status-dot"></span>
+                Explorando
+            </span>
+            <ul class="nav-links">
+                <li><a href="https://github.com/NKSoftLabs" class="social-link" aria-label="GitHub"><img src="IMG/github.png" alt="GitHub" /></a></li>
+                <li><a href="https://www.linkedin.com/in/nelardg" class="social-link" aria-label="LinkedIn"><img src="IMG/linkedin.png" alt="LinkedIn" /></a></li>
+                <li><a href="mailto:stuartgs13@gmail.com" class="social-link" aria-label="Correo"><img src="IMG/gmail.png" alt="Correo" /></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="projects-main">
+        <div class="projects-header">
+            <h1>Proyectos Destacados</h1>
+            <p>Una selección de los trabajos que mejor representan mi enfoque y habilidades.</p>
         </div>
 
-        <div class="box-project" style="background-image: url('IMG/tools.jpg');">
-            <a href="Mechashop.html" class="box-link">
-            <h2 class="subtle">MechaShop</h2>
-            <div class="languages-box">
-                <ul>
-                <li><img src="IMG/piton.png" alt="Python"></li>
-                <li><img src="IMG/SQLite.png" alt="SQLite"></li>
-                </ul>
+        <div class="projects-grid">
+            <!-- Calculadora -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('IMG/calculator.jpg');">
+                    <div class="project-overlay">
+                        <span class="project-tag">2024</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Calculadora</h3>
+                    <p>Aplicación de escritorio con interfaz intuitiva y operaciones básicas y científicas.</p>
+                    <div class="project-tech">
+                        <img src="IMG/csharp.png" alt="C#" />
+                    </div>
+                    <a href="Calculator.html" class="project-link-btn">Ver proyecto →</a>
+                </div>
             </div>
-            </a>
-        </div>
 
-        <div class="box-project" style="background-image: url('IMG/profile.png');">
-            <a href="ProfessionalProfile.html" class="box-link">
-            <h2 class="subtle">Personal Page</h2>
-            <div class="languages-box">
-                <ul>
-                <li><img src="IMG/html.png" alt="HTML"></li>
-                <li><img src="IMG/css.png" alt="CSS"></li>
-                <li><img src="IMG/netlify.png" alt="Netlify"></li>
-                </ul>
+            <!-- MechaShop -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('IMG/tools.jpg');">
+                    <div class="project-overlay">
+                        <span class="project-tag">2025</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>MechaShop</h3>
+                    <p>Sistema de gestión para tiendas con control de inventario y ventas en tiempo real.</p>
+                    <div class="project-tech">
+                        <img src="IMG/piton.png" alt="Python" />
+                        <img src="IMG/SQLite.png" alt="SQLite" />
+                    </div>
+                    <a href="Mechashop.html" class="project-link-btn">Ver proyecto →</a>
+                </div>
             </div>
-            </a>
+
+            <!-- Personal Page -->
+            <div class="project-card">
+                <div class="project-image" style="background-image: url('IMG/profile.png');">
+                    <div class="project-overlay">
+                        <span class="project-tag">2026</span>
+                    </div>
+                </div>
+                <div class="project-body">
+                    <h3>Página Personal</h3>
+                    <p>Portafolio web responsive desarrollado con HTML, CSS y desplegado en Netlify.</p>
+                    <div class="project-tech">
+                        <img src="IMG/html.png" alt="HTML" />
+                        <img src="IMG/css.png" alt="CSS" />
+                        <img src="IMG/netlify.png" alt="Netlify" />
+                    </div>
+                    <a href="ProfessionalProfile.html" class="project-link-btn">Ver proyecto →</a>
+                </div>
+            </div>
         </div>
-    </div>
+    </main>
 
-
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; 2026 Nelard Gutierrez</p>
+            <div class="footer-links">
+                <a href="https://github.com/NKSoftLabs">GitHub</a>
+                <a href="https://www.linkedin.com/in/nelardg">LinkedIn</a>
+                <a href="mailto:stuartgs13@gmail.com">Correo</a>
+            </div>
+        </div>
+    </footer>
 </body>
-<footer>
-        <p>&copy; 2026 Nelard Gutierrez — All rights reserved</p>
-</footer>
 </html>
