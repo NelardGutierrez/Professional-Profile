@@ -142,7 +142,7 @@ export default function Home() {
 
       {/* SECCIÓN DESTACADA DE PROYECTOS */}
       <section className="max-w-5xl mx-auto py-16 border-t border-zinc-800">
-        <div className="bg-gradient-to-r from-card-dark via-zinc-900 to-card-dark border border-zinc-800 rounded-2xl p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-linear-to-r from-card-dark via-zinc-900 to-card-dark border border-zinc-800 rounded-2xl p-8 md:p-12 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="text-left max-w-xl">
             <span className="text-wine-red text-xs font-mono tracking-wider uppercase bg-wine-red/10 px-3 py-1 rounded-full border border-wine-red/20">
                Portafolio de trabajo
@@ -157,7 +157,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
             <a
-              href="https://github.com/NKSoftLabs"
+              href="https://github.com/NelardGutierrez"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-wine-red hover:bg-wine-red-hover text-white px-6 py-3 rounded-xl font-medium text-center transition-colors shadow-lg shadow-wine-red/20"
