@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bgDark: #000000;
+  --color-wineRed: #5C030B;
+  --color-wineRedHover: #7a040f;
+  --color-cardDark: #0c0c0c;
+  --color-textMuted: #a1a1aa;
+}
+
+body {
+  background-color: var(--color-bgDark);
+  color: #ffffff;
+}

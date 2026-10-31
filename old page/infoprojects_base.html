@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- REEMPLAZAR: Título de la pestaña según el proyecto -->
+    <title>Nombre del Proyecto · Detalle</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="avatar-ring">
+                    <img src="IMG/user.png" class="avatar" alt="Nelard" />
+                </div>
+                <div class="logo-text">
+                    <span class="name-title">Nelard Gutierrez</span>
+                    <span class="subtitle">Desarrollador · Estudiante TI</span>
+                </div>
+            </div>
+            <div class="header-actions">
+                <a href="projects.html" class="btn-primary btn-outline">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+                    Volver a Proyectos
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <nav class="nav-glass">
+        <div class="nav-inner">
+            <span class="nav-badge">
+                <span class="status-dot"></span>
+                Detalle de Proyecto
+            </span>
+            <ul class="nav-links">
+                <li><a href="https://github.com/NKSoftLabs" class="social-link" aria-label="GitHub"><img src="IMG/github.png" alt="GitHub" /></a></li>
+                <li><a href="https://www.linkedin.com/in/nelardg" class="social-link" aria-label="LinkedIn"><img src="IMG/linkedin.png" alt="LinkedIn" /></a></li>
+                <li><a href="mailto:stuartgs13@gmail.com" class="social-link" aria-label="Correo"><img src="IMG/gmail.png" alt="Correo" /></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- DETALLE DEL PROYECTO -->
+    <main class="projects-main">
+        <article class="hero-card">
+            
+            <!-- 1. ENCABEZADO DEL PROYECTO -->
+            <div class="hero-content">
+                <!-- REEMPLAZAR: Categoria/Tipo de proyecto y Año -->
+                <div class="hero-badge">💻 Categoria del Proyecto (Ej: Aplicación Web / Móvil) · 2026</div>
+                
+                <!-- REEMPLAZAR: Nombre del Proyecto -->
+                <h1 class="hero-title" style="font-size: 38px; margin-bottom: 12px;">Nombre del Proyecto</h1>
+                
+                <!-- REEMPLAZAR: Resumen ejecutivo del proyecto -->
+                <p class="hero-text">
+                    Escribe aquí una breve descripción general del proyecto. Explica en 2 o 3 líneas qué hace la aplicación y cuál es el objetivo principal.
+                </p>
+                
+                <!-- 2. TECNOLOGÍAS UTILIZADAS -->
+                <div style="margin-top: 24px;">
+                    <span style="font-size: 13px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px; display: block; margin-bottom: 10px;">Tecnologías Utilizadas</span>
+                    <div class="hero-tags">
+                        <!-- REEMPLAZAR / AÑADIR O QUITAR TECNOLOGÍAS SEGÚN EL PROYECTO -->
+                        <span style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: #f3f4f6; font-weight: 500;">
+                            <img src="IMG/csharp.png" alt="Tecnología 1" style="width: 20px; height: 20px; object-fit: contain;" /> Tecnología 1
+                        </span>
+                        <span style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: #f3f4f6; font-weight: 500;">
+                            <img src="IMG/piton.png" alt="Tecnología 2" style="width: 20px; height: 20px; object-fit: contain;" /> Tecnología 2
+                        </span>
+                        <span style="display: inline-flex; align-items: center; gap: 8px; padding: 6px 16px; background: #f3f4f6; font-weight: 500;">
+                            Tecnología 3
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. GALERÍA DE 3 IMÁGENES -->
+            <div style="margin-top: 40px; padding-top: 32px; border-top: 1px solid #f0f0f0;">
+                <div class="section-header" style="margin-bottom: 18px;">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">Capturas de Pantalla</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;" class="gallery-grid">
+                    <!-- Imagen 1 -->
+                    <div style="border-radius: 16px; overflow: hidden; border: 1px solid #e5e7eb; background: #f9fafb; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                        <img src="IMG/captura1.png" alt="Captura 1" style="width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'" />
+                        <div style="padding: 10px 14px; font-size: 12px; color: #6b7280; text-align: center; font-weight: 500;">Descripción Captura 1</div>
+                    </div>
+                    <!-- Imagen 2 -->
+                    <div style="border-radius: 16px; overflow: hidden; border: 1px solid #e5e7eb; background: #f9fafb; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                        <img src="IMG/captura2.png" alt="Captura 2" style="width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'" />
+                        <div style="padding: 10px 14px; font-size: 12px; color: #6b7280; text-align: center; font-weight: 500;">Descripción Captura 2</div>
+                    </div>
+                    <!-- Imagen 3 -->
+                    <div style="border-radius: 16px; overflow: hidden; border: 1px solid #e5e7eb; background: #f9fafb; box-shadow: 0 4px 12px rgba(0,0,0,0.03);">
+                        <img src="IMG/captura3.png" alt="Captura 3" style="width: 100%; height: 200px; object-fit: cover; display: block; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'" />
+                        <div style="padding: 10px 14px; font-size: 12px; color: #6b7280; text-align: center; font-weight: 500;">Descripción Captura 3</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. DESCRIPCIÓN Y CARACTERÍSTICAS -->
+            <div style="margin-top: 40px; padding-top: 32px; border-top: 1px solid #f0f0f0;">
+                <div class="section-header" style="margin-bottom: 18px;">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Sobre el Proyecto</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div style="color: #4b5563; font-size: 15px; line-height: 1.8;">
+                    <p style="margin-bottom: 16px;">
+                        Escribe aquí la explicación detallada del sistema, el problema que resuelve, la arquitectura seleccionada o cómo estructuraste el código o la base de datos.
+                    </p>
+                    
+                    <p style="margin-bottom: 12px; font-weight: 600; color: #111827;">Características clave:</p>
+                    <ul style="margin-left: 20px; margin-bottom: 24px; display: flex; flex-direction: column; gap: 8px;">
+                        <li>Característica principal 1 del sistema o función destacada.</li>
+                        <li>Característica principal 2 (ej. integración con API, seguridad, etc.).</li>
+                        <li>Característica principal 3 (ej. diseño adaptativo, interfaz intuitiva).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 5. ENLACES Y ACCIONES -->
+            <div style="margin-top: 32px; padding-top: 24px; border-top: 1px solid #f0f0f0; display: flex; gap: 16px; flex-wrap: wrap;">
+                <!-- REEMPLAZAR: Enlace al repositorio en GitHub -->
+                <a href="https://github.com/NKSoftLabs/tu-repositorio" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    Ver en GitHub
+                </a>
+                
+            </div>
+
+        </article>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <p>&copy; 2026 Nelard Gutierrez</p>
+            <div class="footer-links">
+                <a href="https://github.com/NKSoftLabs">GitHub</a>
+                <a href="https://www.linkedin.com/in/nelardg">LinkedIn</a>
+                <a href="mailto:stuartgs13@gmail.com">Correo</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
