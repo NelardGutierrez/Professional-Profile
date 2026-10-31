@@ -157,7 +157,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
             <a
-              href="https://github.com/NKSoftLabs"
+              href="https://github.com/NelardGutierrez"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-wine-red hover:bg-wine-red-hover text-white px-6 py-3 rounded-xl font-medium text-center transition-colors shadow-lg shadow-wine-red/20"
